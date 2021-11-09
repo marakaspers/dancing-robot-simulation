@@ -8,6 +8,7 @@ More information on the robot and its dance moves can be found in [his repo](htt
 Files:
 
 * README.md
+* dumbo (folder containing all simulation files including the URDF's and STL's)
 * first_move.py (Python script showing one simple move to verify functioning simulation)
 
 In collaboration with @debbie-leung
