@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="dumbo">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0003891 -4.683E-05 0.00058807"
+        rpy="0 0 0" />
+      <mass
+        value="0.6644" />
+      <inertia
+        ixx="0.0015485"
+        ixy="0.00031884"
+        ixz="1.2531E-06"
+        iyy="0.0011871"
+        iyz="8.9035E-07"
+        izz="0.0014583" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dumbo/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dumbo/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link_1">
+    <inertial>
+      <origin
+        xyz="0.037623 0.00122 -0.036859"
+        rpy="0 0 0" />
+      <mass
+        value="0.055758" />
+      <inertia
+        ixx="1.7216E-05"
+        ixy="2.9228E-09"
+        ixz="2.6246E-06"
+        iyy="1.5352E-05"
+        iyz="3.2628E-11"
+        izz="1.9775E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dumbo/meshes/Link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dumbo/meshes/Link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_1"
+    type="continuous">
+    <origin
+      xyz="0.053116 -0.0017161 -0.03956"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link_1" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="Link_2">
+    <inertial>
+      <origin
+        xyz="0.0300592980712255 0.000323452601505174 -0.0280232914478792"
+        rpy="0 0 0" />
+      <mass
+        value="0.0314122028489567" />
+      <inertia
+        ixx="1.58162527624386E-05"
+        ixy="1.79367144013202E-10"
+        ixz="3.56096424632083E-06"
+        iyy="1.22648801737665E-05"
+        iyz="-1.77050389086186E-10"
+        izz="1.69003925901005E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dumbo/meshes/Link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dumbo/meshes/Link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_2"
+    type="continuous">
+    <origin
+      xyz="0.071566 0 -0.034398"
+      rpy="0 0 0" />
+    <parent
+      link="Link_1" />
+    <child
+      link="Link_2" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="Link_3">
+    <inertial>
+      <origin
+        xyz="-0.0372383623183203 0.00107559636099163 -0.0373010602535738"
+        rpy="0 0 0" />
+      <mass
+        value="0.0557577667089777" />
+      <inertia
+        ixx="1.7262977682283E-05"
+        ixy="-1.69489968723823E-07"
+        ixz="-2.64335312248121E-06"
+        iyy="1.53666258146298E-05"
+        iyz="2.38436585026532E-07"
+        izz="1.97124812643958E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dumbo/meshes/Link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dumbo/meshes/Link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_3"
+    type="continuous">
+    <origin
+      xyz="-0.0528669815983072 0.00275904378510602 -0.0395600000000004"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link_3" />
+    <axis
+      xyz="0.0898380495475384 0.995956387023796 0" />
+  </joint>
+  <link
+    name="Link_4">
+    <inertial>
+      <origin
+        xyz="-0.0316383907021758 0.00147070619407172 -0.0242511217385708"
+        rpy="0 0 0" />
+      <mass
+        value="0.0314120671897481" />
+      <inertia
+        ixx="1.66177005868051E-05"
+        ixy="-3.92516383766082E-07"
+        ixz="-3.57535683649491E-06"
+        iyy="1.23002274687641E-05"
+        iyz="3.22695798191187E-07"
+        izz="1.60634342613991E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dumbo/meshes/Link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dumbo/meshes/Link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_4"
+    type="continuous">
+    <origin
+      xyz="-0.066607 0.0060081 -0.042807"
+      rpy="0 0 0" />
+    <parent
+      link="Link_3" />
+    <child
+      link="Link_4" />
+    <axis
+      xyz="-0.089838 -0.99596 0" />
+  </joint>
+  <link
+    name="Link_5">
+    <inertial>
+      <origin
+        xyz="-0.014954 -0.028746 -0.02337"
+        rpy="0 0 0" />
+      <mass
+        value="0.031412" />
+      <inertia
+        ixx="1.3447E-05"
+        ixy="1.8859E-06"
+        ixz="-1.9132E-06"
+        iyy="1.5272E-05"
+        iyz="-3.0504E-06"
+        izz="1.6262E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dumbo/meshes/Link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dumbo/meshes/Link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_5"
+    type="continuous">
+    <origin
+      xyz="-0.0657559231458219 -0.101379319496857 -0.0820000000000009"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link_5" />
+    <axis
+      xyz="0.847190832012041 -0.531288710735271 0" />
+  </joint>
+  <link
+    name="Link_6">
+    <inertial>
+      <origin
+        xyz="0.0191401353376151 -0.0271899690921557 -0.0221954595021001"
+        rpy="0 0 0" />
+      <mass
+        value="0.0314118845736051" />
+      <inertia
+        ixx="1.32474865737016E-05"
+        ixy="-1.70241252361309E-06"
+        ixz="1.79902672883724E-06"
+        iyy="1.52131164771294E-05"
+        iyz="-3.11615758364275E-06"
+        izz="1.65201027200006E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dumbo/meshes/Link_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dumbo/meshes/Link_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_6"
+    type="continuous">
+    <origin
+      xyz="0.057373 -0.10673 -0.082"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link_6" />
+    <axis
+      xyz="0.86603 0.5 0" />
+  </joint>
+  <link
+    name="Link_7">
+    <inertial>
+      <origin
+        xyz="0.019392 0.028273 -0.020519"
+        rpy="0 0 0" />
+      <mass
+        value="0.031412" />
+      <inertia
+        ixx="1.3158E-05"
+        ixy="1.5477E-06"
+        ixz="1.7824E-06"
+        iyy="1.4946E-05"
+        iyz="3.0868E-06"
+        izz="1.6877E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dumbo/meshes/Link_7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dumbo/meshes/Link_7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_7"
+    type="continuous">
+    <origin
+      xyz="0.05886 0.10587 -0.082"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link_7" />
+    <axis
+      xyz="-0.86603 0.5 0" />
+  </joint>
+  <link
+    name="Link_8">
+    <inertial>
+      <origin
+        xyz="-0.012823430092728 0.0309579223793746 -0.0220383000936515"
+        rpy="0 0 0" />
+      <mass
+        value="0.0314118850791331" />
+      <inertia
+        ixx="1.32389647064647E-05"
+        ixy="-1.68765202190941E-06"
+        ixz="-1.79817842620008E-06"
+        iyy="1.51875495748829E-05"
+        iyz="3.11468784206545E-06"
+        izz="1.65541914419128E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dumbo/meshes/Link_8.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dumbo/meshes/Link_8.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_8"
+    type="continuous">
+    <origin
+      xyz="-0.063742 0.10305 -0.082"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link_8" />
+    <axis
+      xyz="-0.86603 -0.5 0" />
+  </joint>
+</robot>
